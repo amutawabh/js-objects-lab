@@ -47,7 +47,7 @@ Exercise 4
 Solve Exercise 4 here:
 */
 
-const pokemon = [
+const testgame = [
     { name: "Bulbasaur", starter: true },
     { name: "Charmander", starter: true },
     { name: "Squirtle", starter: true },
@@ -56,7 +56,7 @@ const pokemon = [
   const starterPokemon = pokemon.find(p => p.starter === true);
   
   if (starterPokemon) {
-    game.party.push(starterPokemon); // استخدام push لإضافة البوكيمون
+    game.party.push(starterPokemon);
   }
   
   console.log(game.party);
