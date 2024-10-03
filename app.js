@@ -53,7 +53,7 @@ const testgame = [
     { name: "Squirtle", starter: true },
   
   ];
-  const starterPokemon = pokemon.find(p => p.starter === true);
+  const starterPokémon  = pokemon.find(p => p.starter === true);
   
   if (starterPokemon) {
     game.party.push(starterPokemon);
@@ -195,12 +195,11 @@ After writing this method, call it and pass in a Pokemon object of your choice f
 Solve Exercise 10 here:
 */
 
-// إضافة طريقة catchPokemon إلى كائن game
 game.catchPokemon = function(pokemonObj) {
     this.party.push(pokemonObj);
   };
   
-  const chosenPokemon = pokemon.find(p => p.name === "Pidgey");
+  const pokemonObj = pokemon.find(p => p.name === "Pidgey");
   
   game.catchPokemon(chosenPokemon);
   
